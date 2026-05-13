@@ -358,6 +358,33 @@ nav {
   color: var(--text-muted); line-height: 1.7;
 }
 
+.exp-card p sup {
+  font-size: 0.6rem;
+  color: var(--teal);
+  font-weight: 600;
+  vertical-align: super;
+  line-height: 0;
+}
+.expertise-footnotes {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+.expertise-footnotes p {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+.expertise-footnotes sup {
+  font-size: 0.55rem;
+  color: var(--teal);
+  font-weight: 600;
+  vertical-align: super;
+  line-height: 0;
+}
+
 /* ── EXPERIENCE ── */
 .experience-section { background: var(--off-white); }
 .timeline { position: relative; padding-left: 2rem; }
@@ -401,38 +428,6 @@ nav {
 }
 .tl-bullets li::before {
   content: '—'; position: absolute; left: 0; color: var(--teal);
-}
-
-/* ── PROOF ── */
-.proof-section { background: var(--off-white-2); }
-.proof-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.25rem; }
-.proof-grid-3 { grid-template-columns: repeat(3,1fr); }
-.proof-card {
-  background: white; padding: 2rem;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  position: relative; overflow: hidden;
-  transition: box-shadow 0.2s;
-}
-.proof-card::before {
-  content: ''; position: absolute;
-  top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(to right, var(--teal), var(--slate));
-}
-.proof-card:hover { box-shadow: var(--shadow-md); }
-.proof-tag {
-  font-size: 0.65rem; font-weight: 600;
-  letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--teal); margin-bottom: 0.75rem;
-}
-.proof-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.05rem; font-weight: 700;
-  color: var(--navy); margin-bottom: 0.5rem;
-}
-.proof-card p {
-  font-size: 0.82rem; font-weight: 300;
-  color: var(--text-muted); line-height: 1.7;
 }
 
 /* ── TESTIMONIALS ── */
@@ -555,7 +550,6 @@ footer {
   .testimonial-grid { grid-template-columns: 1fr; }
   .about-layout { grid-template-columns: 1fr; gap: 2.5rem; }
   .expertise-grid { grid-template-columns: 1fr; }
-  .proof-grid, .proof-grid-3 { grid-template-columns: 1fr; }
   .engagement-grid { grid-template-columns: 1fr; }
   .section-title { font-size: 1.85rem; margin-bottom: 2rem; }
 }
@@ -645,7 +639,6 @@ footer {
 <section id="about" class="about-section">
   <div class="section-wrap">
     <p class="eyebrow">About</p>
-    <h2 class="section-title">Built on eighteen years of<br><em>making transformation stick</em></h2>
     <div class="about-narrative about-narrative-solo">
       <p>For nearly two decades, I've watched technology evolve. From disconnected systems to APIs, automations, and now AI. The tools keep changing. The core organizational failures stay remarkably consistent: unclear accountability, subjective investment decisions, and operating structures that either block progress or fail to protect it.</p>
       <p>What I've learned is that transformation doesn't fail because of the technology. It fails because organizations can't align decision-making, funding, and execution fast enough to keep pace with what they're deploying.</p>
@@ -664,33 +657,36 @@ footer {
       <div class="exp-card">
         <div class="exp-num">i.</div>
         <h3>Enterprise Operating Model Design</h3>
-        <p>Designing the accountability structures, decision rights, and governance frameworks that make AI deployment, transformation programs, and enterprise platforms operate reliably at scale. Building the operating system organizations need before they realize they need it.</p>
+        <p>Only 35% of transformations meet their goals.<sup>1</sup> The ones that do share a common foundation: clear decision rights, defined accountability, and governance designed before the work started. I design the operating architecture — decision rights, funding alignment, accountability structures, prioritization logic — that makes transformation governable at scale.</p>
       </div>
       <div class="exp-card">
         <div class="exp-num">ii.</div>
         <h3>AI Enablement & Organizational Readiness</h3>
-        <p>Governing enterprise AI initiatives from policy to production. Cross-functional oversight for Copilot and agentic AI deployments — acceptable use frameworks, privacy review escalation, Legal alignment, and the change management that drives adoption across global teams.</p>
+        <p>Over 80% of organizations using AI report no meaningful enterprise-wide impact.<sup>2</sup> The gap isn't the technology — it's the organizational infrastructure around it. Governance frameworks, human oversight models, accountability structures, change management, and adoption planning are what separate pilots that stick from deployments that quietly fade.</p>
       </div>
       <div class="exp-card">
         <div class="exp-num">iii.</div>
         <h3>Enterprise Transformation & Integration</h3>
-        <p>Key contributor across $95B+ in M&A transaction value, including the Bayer/Monsanto and Synopsys/Ansys integrations. Aligning technology roadmaps, operating models, and cross-functional execution across merged organizations under high-stakes conditions.</p>
+        <p>Large-scale transformation and M&A create the conditions where execution most commonly breaks down: fragmented accountability, competing roadmaps, and cross-functional misalignment under pressure. Leading execution across $95B+ in M&A transaction value — aligning operating models, technology roadmaps, and organizational priorities where the stakes don't allow for long learning curves.</p>
       </div>
       <div class="exp-card">
         <div class="exp-num">iv.</div>
         <h3>Continuous Transformation & Digital Operations</h3>
-        <p>Governing complex enterprise platforms and delivery programs at scale — AEM, Salesforce, Adobe Analytics, and enterprise-wide change management. AI-assisted delivery practices introduced across global teams, with the adoption measurement to prove it stuck.</p>
+        <p>Organizations lose an average of 42% of expected transformation value in the sustainment phase<sup>3</sup> — after go-live, when attention shifts and the operating model wasn't designed to carry the work forward. Building the post-implementation infrastructure that prevents that: run-the-business governance, continuous innovation cadence, adoption sustainment, and platform evolution.</p>
       </div>
       <div class="exp-card">
         <div class="exp-num">v.</div>
         <h3>Transformation Execution Infrastructure</h3>
-        <p>Building PMO and portfolio management infrastructure from inception. Hybrid Agile/Waterfall governance, portfolio funding management, annual investment approval processes, and tiered governance frameworks — recognized by Gartner for pioneering enterprise Agile adoption.</p>
+        <p>Operating model design is only as valuable as the delivery systems that execute it. Building the machinery: portfolio governance, hybrid Agile/Waterfall frameworks, investment approval processes, and organizational cadence that keeps complex programs moving without losing accountability.</p>
       </div>
       <div class="exp-card">
         <div class="exp-num">vi.</div>
         <h3>Investment Prioritization & Value Governance</h3>
-        <p>Designing frameworks that quantify transformation ROI before investment approval. Replacing subjective prioritization with structured, defensible business cases for AI initiatives and large-scale programs.</p>
+        <p>Most transformation investments are prioritized by whoever lobbied hardest. Building the frameworks that replace that: structured business case development, scoring models, investment criteria, and portfolio rationalization that make funding decisions defensible and traceable to outcomes.</p>
       </div>
+    </div>
+    <div class="expertise-footnotes">
+      <p><sup>1</sup> BCG, Digital Transformation Study, 2024 (analysis of 850+ companies) &nbsp;&nbsp; <sup>2</sup> McKinsey, The State of AI, 2025 &nbsp;&nbsp; <sup>3</sup> McKinsey, Sustaining Transformation Value, 2024</p>
     </div>
   </div>
 </section>
@@ -699,7 +695,7 @@ footer {
 <section id="experience" class="experience-section">
   <div class="section-wrap">
     <p class="eyebrow">Experience</p>
-    <h2 class="section-title">18 years. <em>Always the hard problems.</em></h2>
+    <h2 class="section-title">18 years. <em>Scaling transformation beyond implementation.</em></h2>
     <div class="timeline">
       <div class="tl-item">
         <div class="tl-period">2020 – Present</div>
@@ -708,8 +704,8 @@ footer {
         <ul class="tl-bullets">
           <li>Leading marketing technology integration for the $35B Synopsys-Ansys merger. Governance frameworks, stakeholder alignment, and operating model design across merged organizations.</li>
           <li>Directed cross-functional oversight for one of the first enterprise Microsoft 365 Copilot deployments, in partnership with Legal. Established policy, accountability structures, and escalation paths.</li>
-          <li>Managed $15M+ annual portfolio; led cross-functional team across 4 countries and 8 U.S. states.</li>
-          <li>Introduced AI-assisted delivery practices across 125+ professionals: backlog refinement, user story creation, test scenario generation.</li>
+          <li>Led a cross-functional global team delivering the integrated martech stack — AEMaaCS, Adobe Analytics, Coveo, Akamai, Pardot, and Salesforce — that drove 33% traffic growth and 332K+ leads through a connected demand-to-opportunity funnel.</li>
+          <li>Introduced AI-assisted delivery practices across backlog refinement, user story creation, and test scenario generation — accelerating planning cycles and improving delivery quality across a globally distributed team.</li>
         </ul>
       </div>
       <div class="tl-item">
@@ -740,6 +736,7 @@ footer {
         </ul>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -752,41 +749,16 @@ footer {
       <div class="testimonial-card">
         <p class="testimonial-quote">She consistently translated complex challenges into scalable, practical solutions that drive measurable business outcomes. <strong>Her ability to bridge strategy and delivery ensuring solutions are not only visionary but also implementable and value-driven</strong> — and always thinks with the end goal in mind. Kristina builds trust quickly, communicates with precision, and elevates everyone around her through collaboration and thoughtful leadership.</p>
         <div class="testimonial-attribution">
-          <div class="testimonial-name">Matthew McGann, MBA, CPSM</div>
+          <div class="testimonial-name">Matthew M.</div>
           <div class="testimonial-title">Global Strategic Sourcing Manager · Synopsys</div>
         </div>
       </div>
       <div class="testimonial-card">
         <p class="testimonial-quote"><strong>Her strength as a strategic thinker stands out in how she anticipates challenges, connects the dots across initiatives, and sets a clear, forward-looking direction.</strong> Her ability to bring stakeholders together and drive transformation with clarity and purpose has played a key role in enabling impactful outcomes for the team and the organization.</p>
         <div class="testimonial-attribution">
-          <div class="testimonial-name">Amit Ghodgaonkar</div>
+          <div class="testimonial-name">Amit G.</div>
           <div class="testimonial-title">Senior Digital Leader · Ansys / Synopsys</div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── PROOF ── -->
-<section class="proof-section">
-  <div class="section-wrap">
-    <p class="eyebrow">Selected Outcomes</p>
-    <h2 class="section-title">What I've <em>actually built</em></h2>
-    <div class="proof-grid proof-grid-3">
-      <div class="proof-card">
-        <div class="proof-tag">Enterprise AI · Microsoft Copilot</div>
-        <h3>Enterprise Copilot Deployment</h3>
-        <p>Directed cross-functional oversight for one of the first enterprise Microsoft 365 Copilot deployments. Acceptable use framework, privacy review escalation, Legal alignment, accountability structures, and escalation paths built from the ground up.</p>
-      </div>
-      <div class="proof-card">
-        <div class="proof-tag">M&A Integration · $95B+ Transaction Value</div>
-        <h3>Enterprise M&A Integration</h3>
-        <p>Key contributor across the Bayer/Monsanto and Synopsys/Ansys integrations. Aligning technology roadmaps and operating models across global organizations under high-stakes conditions.</p>
-      </div>
-      <div class="proof-card">
-        <div class="proof-tag">PMO Architecture · Gartner Recognition</div>
-        <h3>Agile PMO from Inception</h3>
-        <p>Built R&D IT PMO from inception at Monsanto. Recognized by Gartner for pioneering the Waterfall-to-Agile shift that became the enterprise benchmark for PMO adoption.</p>
       </div>
     </div>
   </div>
@@ -822,10 +794,9 @@ footer {
   <div class="contact-inner">
     <h2 class="contact-title">Ready to move faster<br><em>with the right structure?</em></h2>
     <div class="contact-rule"></div>
-    <p class="contact-sub">Open to senior transformation leadership, fractional consulting, and advisory engagements across AI governance, M&A integration, PMO architecture, and large-scale execution. Based in St. Louis, MO.</p>
+    <p class="contact-sub">Open to senior transformation leadership, fractional consulting, and advisory engagements across AI governance, M&A integration, PMO architecture, and large-scale execution. Based in St.&nbsp;Louis,&nbsp;MO.</p>
     <div class="contact-actions">
       <a href="https://linkedin.com/in/kristina-lahiri" class="btn-navy" target="_blank">Connect on LinkedIn →</a>
-      <a href="mailto:hello@kristinalahiri.com" class="btn-outline">Discuss an engagement →</a>
     </div>
   </div>
 </section>
